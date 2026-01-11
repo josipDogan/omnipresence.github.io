@@ -1,0 +1,62 @@
+baseURL = "https://omnipresence.github.io/"
+languageCode = "en-us"
+title = "Omnipresence"
+theme = "hugo-theme-gallery"
+copyright = "© {year} Omnipresence"
+
+# Pagination (updated syntax)
+[pagination]
+  pagerSize = 999999
+
+# Taxonomies
+[taxonomies]
+  tag = "tags"
+
+# Privacy (updated Twitter/X syntax)
+[privacy]
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+  [privacy.x]
+    disabled = false
+    enableDNT = true
+    simple = true
+  [privacy.instagram]
+    disabled = false
+    simple = true
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+# Imaging
+[imaging]
+  resampleFilter = "CatmullRom"
+  quality = 75
+  anchor = "smart"
+
+# Image processing
+[params]
+  defaultTheme = "dark"
+  
+  # Gallery settings
+  [params.gallery]
+    downloadOriginals = true
+    showExif = true
+
+# Author
+[author]
+  name = "Omnipresence"
+  homepage = "https://omnipresence.github.io/"
+
+# Output formats
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+# Markup
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "monokai"
