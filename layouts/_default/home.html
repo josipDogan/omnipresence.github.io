@@ -1,17 +1,9 @@
 {{ define "main" }}
 <section class="video-gallery">
   <h1>{{ .Title }}</h1>
-
-  <!-- DEBUG 
-  <div style="color: white; padding: 20px; background: red; margin: 2rem">
-    DEBUG: site.Data exists = {{ if site.Data }}YES{{ else }}NO{{ end }}
-    <br />
-    live_concerts exists = {{ if site.Data.live_concerts }}YES{{ else }}NO{{ end
-    }} {{ if site.Data.live_concerts }}
-    <br />Number of videos: {{ len site.Data.live_concerts }} {{ end }}
-  </div> -->
-
-  {{ if site.Data.live_concerts }}
+  {{ if .Description }}
+  <p class="site-description">{{ .Description }}</p>
+  {{ end }} {{ if site.Data.live_concerts }}
   <div class="video-grid">
     {{ range site.Data.live_concerts }}
     <div class="video-item">
@@ -45,7 +37,7 @@
   </div>
   {{ else }}
   <p style="color: red; text-align: center; padding: 2rem">
-    No video data found. Please check /data/live-concerts.yaml exists.
+    No video data found. Please check /data/live_concerts.yaml exists.
   </p>
   {{ end }}
 </section>
@@ -60,7 +52,19 @@
 
   .video-gallery h1 {
     text-align: center;
-    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .site-description {
+    text-align: center;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 auto 3rem;
+    font-style: italic;
+    max-width: 800px;
+    padding: 0 2rem;
   }
 
   .video-grid {
@@ -122,13 +126,25 @@
     .video-gallery {
       padding: 1rem;
     }
+
+    .video-gallery h1 {
+      font-size: 2rem;
+    }
+
+    .site-description {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
     .video-grid {
       grid-template-columns: 1fr;
       gap: 1.5rem;
     }
+
     .video-info h3 {
       font-size: 1rem;
     }
+
     .video-description {
       font-size: 0.8rem;
     }
