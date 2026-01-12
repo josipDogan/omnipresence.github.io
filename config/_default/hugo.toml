@@ -1,4 +1,4 @@
-baseURL = "https://josipdogan.github.io/omnipresence.github.io/"
+baseURL = "https://omni-presence.net/"
 languageCode = "en-us"
 title = "Omnipresence"
 theme = "hugo-theme-gallery"
