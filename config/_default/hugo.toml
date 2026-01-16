@@ -1,4 +1,4 @@
-baseURL = "https://omni-presence.net/"
+baseURL = "https://www.omni-presence.net/"
 languageCode = "en-us"
 title = "Omnipresence"
 theme = "hugo-theme-gallery"
