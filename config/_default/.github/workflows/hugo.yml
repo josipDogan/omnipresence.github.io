@@ -49,7 +49,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "https://www.omni-presence.net/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -58,7 +58,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: https://www.omni-presence.net
     runs-on: ubuntu-latest
     needs: build
     steps:
