@@ -46,7 +46,7 @@ copyright = "© {year} Omnipresence"
 # Author
 [author]
   name = "Omnipresence"
-  homepage = "https://omnipresence.github.io/"
+  homepage = "https://www.omni-presence.net/"
 
 # Output formats
 [outputs]
