@@ -1,16 +1,22 @@
 ---
-description:  working with LIVE as film director, cinematographer and light designer
-title: Omnipresence
+description: Helping musicians translate their music into a cohesive visual story through light, video and stage design.
+title: Tailored visual journey for live music.
 resources:
   - src: images/about.jpg
     params:
-      cover: true # cover of the home page is used for OpenGraph cards, etc.
+      cover: true
 menus:
   main:
     name: Omnipresence
     weight: -1
-# sub-galleries on list pages are sorted by date and weight (descending)
 cascade:
   build:
-    publishResources: false # do not include full images. Also disable download
+    publishResources: false
 ---
+
+
+
+- **Concept:** Lighting, stage design, and screen narrative.
+- **Execution:** Live light design, realtime video, and direction.
+- **Documentation:** Multicam filming and editing.
+- **Adaptability:** Solutions from small clubs to large arenas.
