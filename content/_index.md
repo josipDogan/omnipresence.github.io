@@ -1,6 +1,6 @@
 ---
 description: Helping musicians translate their music into a cohesive visual story through light, video and stage design.
-title: Tailored visual journey for live music.
+title: Tailored VISUAL JOURNEY for live music.
 resources:
   - src: images/about.jpg
     params:
@@ -16,7 +16,4 @@ cascade:
 
 
 
-- **Concept:** Lighting, stage design, and screen narrative.
-- **Execution:** Live light design, realtime video, and direction.
-- **Documentation:** Multicam filming and editing.
-- **Adaptability:** Solutions from small clubs to large arenas.
+
